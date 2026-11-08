@@ -84,7 +84,7 @@ public class Main {
 static void listBooks() {
 
     if (books.isEmpty()) {
-        System.out.println("\nThe library is currently empty.");
+       System.out.println("\nNo books available. Please add a book first.");
         return;
     }
 
