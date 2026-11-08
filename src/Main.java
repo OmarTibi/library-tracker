@@ -80,27 +80,33 @@ public class Main {
         System.out.println("Book added successfully!");
     }
 
-    // Display all books
-    static void listBooks() {
+   // Display all books
+static void listBooks() {
 
-        if (books.isEmpty()) {
-            System.out.println("No books found.");
-            return;
-        }
-
-        System.out.println("\n===== BOOK LIST =====");
-
-        for (Book book : books) {
-
-            System.out.println(
-                "ID: " + book.getId() +
-                " | Title: " + book.getTitle() +
-                " | Author: " + book.getAuthor() +
-                " | Available: " + book.isAvailable()
-            );
-        }
+    if (books.isEmpty()) {
+        System.out.println("\nThe library is currently empty.");
+        return;
     }
 
+    System.out.println("\n========== BOOK LIST ==========");
+
+    for (Book book : books) {
+
+        String status = book.isAvailable()
+                ? "Available"
+                : "Borrowed";
+
+        System.out.println("-------------------------------");
+        System.out.println("Book ID: " + book.getId());
+        System.out.println("Title: " + book.getTitle());
+        System.out.println("Author: " + book.getAuthor());
+        System.out.println("Status: " + status);
+    }
+
+    System.out.println("-------------------------------");
+    System.out.println("Total books: " + books.size());
+    System.out.println("================================");
+}
     // Search for a book by title
     static void searchBook() {
 
