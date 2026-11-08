@@ -104,7 +104,7 @@ static void listBooks() {
     }
 
     System.out.println("-------------------------------");
-    System.out.println("Total books: " + books.size());
+   System.out.printf("Total books in library: %d%n", books.size());
     System.out.println("================================");
 }
     // Search for a book by title
