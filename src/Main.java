@@ -80,22 +80,27 @@ public class Main {
         System.out.println("Book added successfully!");
     }
 
-   // Display all books
+// Display all books stored in the library
 static void listBooks() {
 
+    // Check if the library is empty
     if (books.isEmpty()) {
-       System.out.println("\nNo books available. Please add a book first.");
+        System.out.println("\nNo books available. Please add a book first.");
         return;
     }
 
+    // Display the book list heading
     System.out.println("\n========== BOOK LIST ==========");
 
+    // Loop through all books
     for (Book book : books) {
 
+        // Check the availability of each book
         String status = book.isAvailable()
                 ? "Available"
                 : "Borrowed";
 
+        // Display book information
         System.out.println("-------------------------------");
         System.out.println("Book ID: " + book.getId());
         System.out.println("Title: " + book.getTitle());
@@ -103,9 +108,8 @@ static void listBooks() {
         System.out.println("Status: " + status);
     }
 
-    System.out.println("-------------------------------");
-   System.out.printf("Total books in library: %d%n", books.size());
-    System.out.println("================================");
+    // Display the total number of books
+    System.out.printf("Total books in library: %d%n", books.size());
 }
     // Search for a book by title
     static void searchBook() {
