@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Library Tracker
 
 ## Project Overview
@@ -58,3 +59,6 @@ The project uses GitHub, feature branches, commits, and pull requests.
 ## Current Limitations
 
 Borrowing and returning books are not implemented.
+=======
+// Line from student B
+>>>>>>> d44a9d9 (docs(student-b): add line)
