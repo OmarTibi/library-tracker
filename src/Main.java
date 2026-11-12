@@ -12,7 +12,7 @@ public class Main {
         // Load saved books when the program starts
         books = BookStore.loadBooks();
 
-        System.out.println("Welcome to Library Tracker!");
+        System.out.println("==Welcome to Library Tracker!==");
 
         boolean running = true;
 
