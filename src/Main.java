@@ -156,3 +156,4 @@ static void listBooks() {
         }
     }
 }
+// Student B - Part 2: Remove feature
