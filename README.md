@@ -58,3 +58,10 @@ The project uses GitHub, feature branches, commits, and pull requests.
 ## Current Limitations
 
 Borrowing and returning books are not implemented.
+
+## Team Members
+
+- Omar Altibi — GitHub: OmarTibi
+- Mohammed Zyad Ali Al Jerjawi — GitHub: maljerjawy1-art
+
+Both students collaborated on the Library Tracker project.
